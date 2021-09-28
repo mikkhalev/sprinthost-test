@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+}
+.wrapper{
+    margin: 64px 275px 0px 275px;
+}
+
+.container{
+    width: 100%;
+    margin: 64px 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Адаптив */
+@media (max-width: 1400px) {
+    .wrapper {
+        margin: 64px 77px 0px 77px;
+    }
+}
+
+@media (max-width: 725px) {
+    .wrapper {
+        margin: 32px 43px 0px 43px;
+    }
+}
+
+@media (max-width: 660px) {
+    .wrapper {
+        margin: 32px 43px 0px 43px;
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* Шрифты */
+@font-face {
+    font-family: Open Sans Bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Open Sans Regular;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.bold {
+    font-family: Open Sans Bold;
+    color: #28293D;
+}
+
+.regular {
+    font-family: Open Sans Regular;
+    color: #555770;
+}

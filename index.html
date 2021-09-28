@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ПУ sprinthost.ru</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/change-pass-section.css">
+	<link rel="stylesheet" type="text/css" href="css/ftp-section.css">
+	<link rel="stylesheet" type="text/css" href="css/for-developers-section.css">
+	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" type="text/css" href="css/modal-change-pass.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header container">
+				<span class="text-header bold">
+					Смена пароля
+				</span>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="form">
+						<div class="new-pass">
+							<span class="new-pass-text bold">
+								Новый пароль
+							</span>
+							<input class="regular" type="text" placeholder="Введите новый пароль">
+						</div>
+						<div class="new-pass">
+							<span class="new-pass-text bold">
+								Повторите новый пароль
+							</span>
+							<input class="regular" type="text" placeholder="Повторите новый пароль">
+						</div>
+						<div class="end-session">
+							<input type="checkbox">
+							<span class="regular">
+								Завершить сеансы на других устройствах
+							</span>
+						</div>
+						<div class="change-pass-btn">
+							<input class="bold" name="change-pass" type="button" value="Сменить пароль">
+						</div>
+					</div>
+					<div class="info">
+						<div>
+							<div class="yellow-circle">
+								<img src="img/info.svg">
+							</div>
+							<div class="info-text">
+								<p class="first-info-text bold">
+									Используйте сложные пароли и не сохраняйте их в браузере.
+								</p>
+								<p class="second-info-text regular">
+									Данные меры цифровой безопасности помогают предотвратить взлом профиля.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="text-ftp-and-ssh">
+					<span class="bold">
+						Пароли для FTP и SSH
+					</span>
+					<p class="regular">
+						По умолчанию для авторизации используется пароль от профиля.<br>
+						Сменить пароль, узнать сервер и IP адрес можно в разделе «Управление сайтами».
+					</p>
+				</div>
+				<div class="row btn-ftp-and-ssh">
+					<button>
+						<span class="bold">
+							Управление сайтами
+						</span>
+						<img src="img/control.svg">
+					</button>
+					<a class="bold" href="">
+						Как настроить?
+					</a>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="text-for-developers">
+						<span class="bold">
+							Доступ для разработчиков
+						</span>
+						<p class="regular">
+							Безопасная передача прав для управления и настройки сайтов, с помощью функции делегирования доступа.
+						</p>
+						<input class="bold" type="button" value="Связанные аккаунты">
+					</div>
+					<div class="img-cat">
+						<img src="img/cat.svg">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div id="modal" class="modal-change-pass">
+		<div class="close-modal-btn">
+			<img src="img/close.svg">
+		</div>
+		<div class="wrapper-modal">
+			<div class="close-modal">
+				<span class="back bold">
+					<img src="img/arrow.svg">
+					Назад
+				</span>
+				<span class="close bold">
+					Закрыть
+				</span>
+			</div>
+			<div class="row-modal">
+				<div class="head-modal">
+					<span class="bold">
+						Смените пароль, если вы заметили подозрительную активность в своем профиле
+					</span>
+				</div>
+				<div class="form-modal modal-window">
+					<div class="new-pass-modal">
+						<span class="bold">
+							Новый пароль
+						</span>
+						<input class="regular" type="text" placeholder="Введите новый пароль">
+					</div>
+					<div class="new-pass-modal">
+						<span class="bold">
+							Повторите новый пароль
+						</span>
+						<input class="regular" type="text" placeholder="Повторите новый пароль">
+					</div>
+					<div class="end-session-modal">
+						<input type="checkbox">
+						<span class="regular">
+							Выйти со всех других устройств
+						</span>
+					</div>
+					<div class="change-pass-btn-modal">
+						<input class="bold" name="change-pass" type="button" value="Сменить пароль">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/change-password.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+.new-pass {
+	margin-bottom: 28px;
+}
+
+.new-pass-text {
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -0.021em;
+
+	display: block;
+
+	margin-bottom: 2px;
+}
+
+.new-pass > input {
+	border: none;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+	width: 328px;
+	height: 34px;
+	
+	padding-left: 8px;
+	padding-bottom: 2px; 
+
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0.0001em;
+	outline:none;
+}
+
+.new-pass > input::placeholder {
+	color: #8E90A6;
+}
+
+.info{
+	width: 100%;
+}
+
+.info > div {
+	border: 1px solid #FFBB0E;
+	box-sizing: border-box;
+	border-radius: 8px;
+
+	width: 240px;
+	height: 188px;
+
+	float: right;
+}
+
+.yellow-circle {
+	width: 40px;
+	height: 40px;
+
+	margin: 15px 15px 4px 15px;
+
+	background-color: #FFD770;
+	border-radius: 20px;
+}
+
+.yellow-circle > img {
+	width: 22px;
+	height: 22px;
+
+	padding: 9px;
+}
+
+.first-info-text {
+	margin: 0px 15px 4px 15px;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.second-info-text {
+	margin: 5px 15px 15px 15px;
+
+	font-size: 0.785em;
+	line-height: 16px;
+	letter-spacing: -0.027em;
+	color: #555770;
+}
+
+.end-session {
+	height: auto;
+
+	margin-top: 52px;
+
+	position: relative;
+}
+
+.end-session > input {
+	width: 20px;
+	height: 20px;
+
+	margin: 2px 14px 2px 2px;
+
+	border-radius: 2px;
+}
+
+.end-session > span {
+	font-size: 14px;
+	line-height: 20px;
+
+	position: absolute;
+	top: 2px;
+}
+
+.change-pass-btn {
+	width: 328px;
+	height: 48px;
+
+	margin-top: 30px;
+}
+
+.change-pass-btn > input {
+	width: 100%;
+	height: 100%;
+
+	background-color: #02A69B;
+	border-radius: 4px;
+	border: none;
+
+	font-size: 16px;
+	color: #ffffff;
+
+	cursor: pointer;
+}
+
+.change-pass-btn > input:onclick {
+	background-color: red;
+}
+
+/* Адаптив */
+@media (max-width: 660px) {
+
+	.row {
+		flex-direction: column;
+	}
+
+	.info {
+		order: 1;
+		margin-bottom: 24px;
+		float: left;
+	}
+
+	.info > div {
+		float: left;
+	}
+
+	.form {
+		order: 2;
+	}
+
+	.end-session > span {
+		margin-left: 4px;
+	}
+	.change-pass-btn {
+		width: 100%;
+	}
+	.new-pass > input {
+		width: 100%;
+	}
+}

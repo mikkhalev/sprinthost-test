@@ -1,0 +1,60 @@
+.text-for-developers {
+	position: relative;
+}
+
+.text-for-developers > span {
+	font-size: 22px;
+	line-height: 24px;
+	color: #28293D;
+}
+
+.text-for-developers > p {
+	width: 327px;
+
+	padding-top: 1px;
+
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.img-cat > img {
+	width: 254px;
+	height: 123px;
+
+	margin-top: 37px;
+	float: right;
+}
+
+.img-cat {
+	width: 100%;
+}
+
+.text-for-developers > input {
+	width: 211px;
+	height: 40px;
+
+	margin-top: 10px;
+
+	background-color: #ffffff;
+	border: 2px solid #02A69B;
+	border-radius: 4px;
+
+	font-size: 16px;
+	line-height: 24px;
+
+	cursor: pointer;
+}
+
+/* Адаптив */
+@media (max-width: 660px) {
+
+	.img-cat{
+		order: 1;
+		margin-bottom: 24px;
+		float: left;
+	}
+
+	.text-for-developers{
+		order: 2;
+	}
+}

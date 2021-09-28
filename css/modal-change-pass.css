@@ -1,0 +1,219 @@
+.close-modal-btn {
+	position: absolute;
+	top: 38px;
+	right: 38px;
+
+	cursor: pointer;
+}
+
+.modal-change-pass {
+	width: 100%;
+	height: 100%;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(28, 28, 40, 0.45);
+	
+	display: none;
+}
+
+.wrapper-modal {
+	width: 392px;
+	height: 516px;
+
+	border: 1px solid rgba(0, 0, 0, 0.32);
+	box-sizing: border-box;
+	border-radius: 8px;
+	background-color: #ffffff;
+
+	padding: 31px 31px 32px 31px;
+}
+
+.new-pass-modal:nth-child(2){
+	margin-bottom: 0px;
+}
+
+.close-modal{
+	height: 20px;
+	margin-bottom: 17px;
+	position: relative;
+}
+
+.back {
+	font-size: 14px;
+	line-height: 24px;
+	color: #008580;
+
+	margin-left: 4px;
+
+	display: none;
+
+	cursor: pointer;
+
+	position: absolute;
+	left: 0px;
+}
+
+.back > img {
+	margin-right: 2px;
+}
+
+.close {
+	font-size: 10px;
+	line-height: 10px;
+	color: #8E90A6;
+
+	border: none;
+	border-bottom: 1px dashed #008580;
+
+	height: 11px;
+
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+}
+
+.row-modal{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.head-modal {
+	font-size: 22px;
+	line-height: 23px;
+	letter-spacing: 0.001em;
+}
+
+.modal-window{
+	margin-top: 23px;
+}
+
+.close-modal{
+	width: 100%;
+}
+
+.new-pass-modal {
+	margin-bottom: 44px;
+}
+
+.new-pass-modal > span {
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -0.021em;
+
+	display: block;
+
+	margin-bottom: 2px;
+}
+
+.new-pass-modal > input {
+	border: none;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+
+	width: 328px;
+	height: 34px;
+	
+	padding-left: 8px;
+	padding-bottom: 2px; 
+
+	font-size: 16px;
+	line-height: 32px;
+	letter-spacing: 0.0001em;
+	outline:none;
+}
+
+.new-pass-modal > input::placeholder {
+	color: #8E90A6;
+}
+
+.end-session-modal {
+	height: auto;
+
+	margin-top: 40px;
+
+	position: relative;
+}
+
+.end-session-modal > input {
+	width: 20px;
+	height: 20px;
+
+	margin: 2px 18px 2px 2px;
+
+	border-radius: 2px;
+}
+
+.end-session-modal > span {
+	font-size: 14px;
+	line-height: 20px;
+
+	position: absolute;
+	top: 2px;
+}
+
+.change-pass-btn-modal {
+	width: 328px;
+	height: 48px;
+
+	margin-top: 34px;
+}
+
+.change-pass-btn-modal > input {
+	width: 100%;
+	height: 100%;
+
+	background-color: #02A69B;
+	border-radius: 4px;
+	border: none;
+
+	font-size: 16px;
+	color: #ffffff;
+
+	cursor: pointer;
+}
+
+.change-pass-btn-modal > input:onclick {
+	background-color: red;
+}
+
+@media (max-width: 500px) {
+	.wrapper-modal{
+		width: 100%;
+		height: 100%;
+		border: none;
+		box-sizing: border-box;
+		border-radius: 0px;
+		padding: 32px 43px 0px 43px;
+	}
+
+	.close-modal-btn{
+		display: none;
+	}
+
+	.back {
+		display: inline;
+	}
+
+	.close {
+		display: none;
+	}
+
+	.head-modal{
+		margin-top: 12px; 
+	}
+
+	.change-pass-btn-modal{
+		margin-right: 0px;
+		width: 100%; 
+	}
+
+	.new-pass-modal > input {
+		width: 100%; 
+	}
+}
